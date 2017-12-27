@@ -1,0 +1,35 @@
+load-generator-configuration:
+  data-source-configuration-name: Ranger
+  rate-generator-configuration-name: default
+  worker-configuration-name: Cassandra
+  metrics-reporter-configuration-name: SimpleConsoleReporter
+  thread-count: 10
+  queue-capacity: 100000
+
+data-source-configuration:
+  values:
+    tag_base: random(['regular', 'semi', 'drama', 'frequent', 'graceful','peaceful', 'nice', 'naughty', 'sudoers', 'male', 'female', 'elf', 'bot', 'lamp', 'linux', 'window', 'mac', 'buyer', 'lurker', 'joker', 'runner'])
+    tag: string('{}_{}', $tag_base, randomContentString(2, ['A'..'Z']))
+    statement:
+      consistencyLevel: ONE
+#      query: string("SELECT * FROM users_by_tag WHERE tag = '{}' AND age > 25 ALLOW FILTERING;", $tag)
+      query: string("SELECT * FROM users_by_tag WHERE tag = '{}';", $tag)
+  output: $statement
+
+rate-generator-configuration:
+  rates:
+    r: 100
+  output: $r
+
+worker-configuration:
+  connection-points: 172.31.0.121:9042
+  keyspace: smartcat_test
+  async: true
+  bootstrap-commands:
+    - "CREATE KEYSPACE IF NOT EXISTS smartcat_test WITH replication = {'class': 'NetworkTopologyStrategy','eu-central': 3};"
+    - USE smartcat_test;
+    - CREATE TABLE IF NOT EXISTS users_by_tag (tag text, last_name text, first_name text, age int, email text, id uuid, PRIMARY KEY ((tag), last_name, first_name, id));
+
+metrics-reporter-configuration:
+  domain: berserker
+  filter:

@@ -1,0 +1,40 @@
+load-generator-configuration:
+  data-source-configuration-name: Ranger
+  rate-generator-configuration-name: default
+  worker-configuration-name: Cassandra
+  metrics-reporter-configuration-name: SimpleConsoleReporter
+  thread-count: 10
+  queue-capacity: 100000
+
+data-source-configuration:
+  values:
+    id: uuid()
+    firstName: random(['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Faythe', 'Grace', 'Heidi','Judy','Mallory','Olivia','Oscar', 'Peggy','Sybil','Ted','Victor','Walter'])
+    lastName: random(['Smith', 'Johnson', 'Williams', 'Davis', 'Jackson', 'White', 'Lewis', 'Clark', 'Steel', 'Alison', 'Bobson','Carlson','Davidson','Evenson','Frederikson','Gaylord','Hanson','Jade','Mikeson','Oldson','Peterfield','Simpson','Taylor','Wolf','Snake','Rabbit', 'Haron', 'Frog', 'Lion', 'Rose', 'Carrot', 'Tree'])
+    age: random(20..70)
+    tag_base: random(['regular', 'semi', 'drama', 'frequent', 'graceful','peaceful', 'nice', 'naughty', 'sudoers', 'male', 'female', 'elf', 'bot', 'lamp', 'linux', 'window', 'mac', 'buyer', 'lurker', 'joker', 'runner'])
+    email: string('{}@domain.com', randomContentString(15))
+    tag: string('{}_{}', $tag_base, randomContentString(2, ['A'..'Z']))
+    statement:
+      consistencyLevel: ONE
+      query: string("INSERT INTO users_by_tag (tag, last_name, first_name, age, email, id) VALUES ('{}', '{}', '{}', {}, '{}',{});", $tag, $lastName, $firstName, $age, $email, $id)
+#      query: string("INSERT INTO users_by_tag (tag, last_name, first_name, age, email, id) VALUES ('abc', 'abc', 'abc', 1, 'abc', uuid()))
+  output: $statement
+
+rate-generator-configuration:
+  rates:
+    r: 10000
+  output: $r
+
+worker-configuration:
+  connection-points: 172.31.0.121:9042
+  keyspace: smartcat_test
+  async: true
+  bootstrap-commands:
+    - "CREATE KEYSPACE IF NOT EXISTS smartcat_test WITH replication = {'class': 'NetworkTopologyStrategy','eu-central': 3};"
+    - USE smartcat_test;
+    - CREATE TABLE IF NOT EXISTS users_by_tag (tag text, last_name text, first_name text, age int, email text, id uuid, PRIMARY KEY ((tag), last_name, first_name, id));
+
+metrics-reporter-configuration:
+  domain: berserker
+  filter:

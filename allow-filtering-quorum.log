@@ -1,0 +1,665 @@
+2017-12-27 09:26:56.584 INFO [main] i.s.b.c.YamlConfigurationLoader - Loading settings from file:/home/centos/config-allow-filtering
+2017-12-27 09:26:56.584 INFO [main] i.s.b.c.YamlConfigurationLoader - Loading settings from file:/home/centos/config-allow-filtering
+2017-12-27 09:26:57.002 INFO [main] o.r.Reflections - Reflections took 227 ms to scan 1 urls, producing 22 keys and 55 values 
+2017-12-27 09:26:57.382 INFO [main] o.r.Reflections - Reflections took 53 ms to scan 1 urls, producing 22 keys and 55 values 
+2017-12-27 09:26:57.495 INFO [main] o.r.Reflections - Reflections took 65 ms to scan 1 urls, producing 22 keys and 55 values 
+2017-12-27 09:26:57.516 INFO [main] c.d.d.c.GuavaCompatibility - Detected Guava >= 19 in the classpath, using modern compatibility layer
+2017-12-27 09:26:57.736 INFO [main] c.d.d.c.ClockFactory - Using native clock to generate timestamps.
+2017-12-27 09:26:57.858 INFO [main] c.d.d.c.NettyUtil - Did not find Netty's native epoll transport in the classpath, defaulting to NIO.
+2017-12-27 09:26:58.430 INFO [main] c.d.d.c.p.DCAwareRoundRobinPolicy - Using data-center name 'eu-central' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+2017-12-27 09:26:58.431 INFO [main] c.d.d.c.Cluster - New Cassandra host /172.31.0.121:9042 added
+2017-12-27 09:26:58.431 INFO [main] c.d.d.c.Cluster - New Cassandra host /172.31.32.121:9042 added
+2017-12-27 09:26:58.431 INFO [main] c.d.d.c.Cluster - New Cassandra host /172.31.48.121:9042 added
+2017-12-27 09:26:58.557 INFO [main] o.r.Reflections - Reflections took 71 ms to scan 1 urls, producing 22 keys and 55 values 
+2017-12-27 09:26:58.574 INFO [main] i.s.b.LoadGenerator - Load generator started.
+2017-12-27 09:26:58.574 INFO [main] i.s.b.LoadGenerator - Load generator started.
+12/27/17 9:27:08 AM ============================================================
+
+-- Gauges ----------------------------------------------------------------------
+io.smartcat.berserker.queueSize
+             value = 1
+
+-- Histograms ------------------------------------------------------------------
+io.smartcat.berserker.responseTime
+             count = 998
+               min = 271698
+               max = 16942818
+              mean = 6331741.62
+            stddev = 3410303.88
+            median = 6448515.00
+              75% <= 9341900.00
+              95% <= 10907747.00
+              98% <= 11214541.00
+              99% <= 11406139.00
+            99.9% <= 16942818.00
+io.smartcat.berserker.serviceTime
+             count = 998
+               min = 11280
+               max = 5009668
+              mean = 132776.80
+            stddev = 375339.22
+            median = 76317.00
+              75% <= 130178.00
+              95% <= 196651.00
+              98% <= 238633.00
+              99% <= 2696007.00
+            99.9% <= 5009668.00
+io.smartcat.berserker.waitTime
+             count = 999
+               min = 40368
+               max = 17515483
+              mean = 6211148.47
+            stddev = 3404825.93
+            median = 6363082.00
+              75% <= 9232394.00
+              95% <= 10763710.00
+              98% <= 11117040.00
+              99% <= 11252606.00
+            99.9% <= 17515483.00
+
+-- Meters ----------------------------------------------------------------------
+io.smartcat.berserker.dropped
+             count = 0
+         mean rate = 0.00 events/second
+     1-minute rate = 0.00 events/second
+     5-minute rate = 0.00 events/second
+    15-minute rate = 0.00 events/second
+io.smartcat.berserker.generatedThroughput
+             count = 999
+         mean rate = 98.86 events/second
+     1-minute rate = 98.16 events/second
+     5-minute rate = 98.03 events/second
+    15-minute rate = 98.01 events/second
+io.smartcat.berserker.processedThroughput
+             count = 999
+         mean rate = 98.86 events/second
+     1-minute rate = 97.99 events/second
+     5-minute rate = 97.84 events/second
+    15-minute rate = 97.81 events/second
+
+
+12/27/17 9:27:18 AM ============================================================
+
+-- Gauges ----------------------------------------------------------------------
+io.smartcat.berserker.queueSize
+             value = 1
+
+-- Histograms ------------------------------------------------------------------
+io.smartcat.berserker.responseTime
+             count = 1998
+               min = 293403
+               max = 26663800
+              mean = 6089077.10
+            stddev = 3471852.40
+            median = 6273871.00
+              75% <= 9273622.00
+              95% <= 10600295.00
+              98% <= 11071136.00
+              99% <= 11229595.00
+            99.9% <= 26663800.00
+io.smartcat.berserker.serviceTime
+             count = 1998
+               min = 8354
+               max = 5009668
+              mean = 110479.52
+            stddev = 377025.73
+            median = 52891.00
+              75% <= 77024.00
+              95% <= 169870.00
+              98% <= 219865.00
+              99% <= 2532138.00
+            99.9% <= 4158823.00
+io.smartcat.berserker.waitTime
+             count = 1998
+               min = 40368
+               max = 23105957
+              mean = 6000254.09
+            stddev = 3446377.74
+            median = 6228045.00
+              75% <= 9226430.00
+              95% <= 10520835.00
+              98% <= 10917721.00
+              99% <= 11532823.00
+            99.9% <= 23105957.00
+
+-- Meters ----------------------------------------------------------------------
+io.smartcat.berserker.dropped
+             count = 0
+         mean rate = 0.00 events/second
+     1-minute rate = 0.00 events/second
+     5-minute rate = 0.00 events/second
+    15-minute rate = 0.00 events/second
+io.smartcat.berserker.generatedThroughput
+             count = 1999
+         mean rate = 99.49 events/second
+     1-minute rate = 98.44 events/second
+     5-minute rate = 98.10 events/second
+    15-minute rate = 98.03 events/second
+io.smartcat.berserker.processedThroughput
+             count = 1998
+         mean rate = 99.44 events/second
+     1-minute rate = 98.30 events/second
+     5-minute rate = 97.91 events/second
+    15-minute rate = 97.84 events/second
+
+
+12/27/17 9:27:28 AM ============================================================
+
+-- Gauges ----------------------------------------------------------------------
+io.smartcat.berserker.queueSize
+             value = 1
+
+-- Histograms ------------------------------------------------------------------
+io.smartcat.berserker.responseTime
+             count = 2998
+               min = 283766
+               max = 26663800
+              mean = 6136139.88
+            stddev = 3433806.44
+            median = 6286787.00
+              75% <= 9277608.00
+              95% <= 10596977.00
+              98% <= 11009473.00
+              99% <= 11191165.00
+            99.9% <= 23950081.00
+io.smartcat.berserker.serviceTime
+             count = 2998
+               min = 7895
+               max = 13663625
+              mean = 114572.75
+            stddev = 579921.83
+            median = 45994.00
+              75% <= 64511.00
+              95% <= 144920.00
+              98% <= 321469.00
+              99% <= 2679628.00
+            99.9% <= 13663625.00
+io.smartcat.berserker.waitTime
+             count = 2998
+               min = 268739
+               max = 21850295
+              mean = 5917237.71
+            stddev = 3378117.09
+            median = 6215796.00
+              75% <= 9220267.00
+              95% <= 10537045.00
+              98% <= 10977897.00
+              99% <= 11240373.00
+            99.9% <= 21737271.00
+
+-- Meters ----------------------------------------------------------------------
+io.smartcat.berserker.dropped
+             count = 0
+         mean rate = 0.00 events/second
+     1-minute rate = 0.00 events/second
+     5-minute rate = 0.00 events/second
+    15-minute rate = 0.00 events/second
+io.smartcat.berserker.generatedThroughput
+             count = 2999
+         mean rate = 99.66 events/second
+     1-minute rate = 98.68 events/second
+     5-minute rate = 98.16 events/second
+    15-minute rate = 98.05 events/second
+io.smartcat.berserker.processedThroughput
+             count = 2998
+         mean rate = 99.62 events/second
+     1-minute rate = 98.56 events/second
+     5-minute rate = 97.98 events/second
+    15-minute rate = 97.86 events/second
+
+
+12/27/17 9:27:38 AM ============================================================
+
+-- Gauges ----------------------------------------------------------------------
+io.smartcat.berserker.queueSize
+             value = 1
+
+-- Histograms ------------------------------------------------------------------
+io.smartcat.berserker.responseTime
+             count = 3998
+               min = 283766
+               max = 26663800
+              mean = 6091927.51
+            stddev = 3445325.60
+            median = 6279236.00
+              75% <= 9279041.00
+              95% <= 10584182.00
+              98% <= 10962406.00
+              99% <= 11299731.00
+            99.9% <= 23950081.00
+io.smartcat.berserker.serviceTime
+             count = 3998
+               min = 7947
+               max = 3475507
+              mean = 75803.48
+            stddev = 265025.82
+            median = 45787.00
+              75% <= 60989.00
+              95% <= 112616.00
+              98% <= 168313.00
+              99% <= 1819056.00
+            99.9% <= 3455670.00
+io.smartcat.berserker.waitTime
+             count = 3998
+               min = 268739
+               max = 21850295
+              mean = 5780883.07
+            stddev = 3315027.39
+            median = 5543517.00
+              75% <= 8266864.00
+              95% <= 10408022.00
+              98% <= 10917721.00
+              99% <= 11240373.00
+            99.9% <= 17515483.00
+
+-- Meters ----------------------------------------------------------------------
+io.smartcat.berserker.dropped
+             count = 0
+         mean rate = 0.00 events/second
+     1-minute rate = 0.00 events/second
+     5-minute rate = 0.00 events/second
+    15-minute rate = 0.00 events/second
+io.smartcat.berserker.generatedThroughput
+             count = 3999
+         mean rate = 99.75 events/second
+     1-minute rate = 98.88 events/second
+     5-minute rate = 98.22 events/second
+    15-minute rate = 98.08 events/second
+io.smartcat.berserker.processedThroughput
+             count = 3998
+         mean rate = 99.73 events/second
+     1-minute rate = 98.78 events/second
+     5-minute rate = 98.05 events/second
+    15-minute rate = 97.88 events/second
+
+
+12/27/17 9:27:48 AM ============================================================
+
+-- Gauges ----------------------------------------------------------------------
+io.smartcat.berserker.queueSize
+             value = 1
+
+-- Histograms ------------------------------------------------------------------
+io.smartcat.berserker.responseTime
+             count = 4998
+               min = 271632
+               max = 23950081
+              mean = 5902385.82
+            stddev = 3358257.43
+            median = 6262493.00
+              75% <= 9258681.00
+              95% <= 10403785.00
+              98% <= 10870299.00
+              99% <= 11090958.00
+            99.9% <= 15549318.00
+io.smartcat.berserker.serviceTime
+             count = 4998
+               min = 7947
+               max = 3579958
+              mean = 87937.52
+            stddev = 335482.72
+            median = 42816.00
+              75% <= 58946.00
+              95% <= 106174.00
+              98% <= 197359.00
+              99% <= 2200334.00
+            99.9% <= 3579958.00
+io.smartcat.berserker.waitTime
+             count = 4998
+               min = 261993
+               max = 21850295
+              mean = 5721627.21
+            stddev = 3245648.17
+            median = 5527716.00
+              75% <= 8240899.00
+              95% <= 10279854.00
+              98% <= 10867030.00
+              99% <= 11243055.00
+            99.9% <= 17515483.00
+
+-- Meters ----------------------------------------------------------------------
+io.smartcat.berserker.dropped
+             count = 0
+         mean rate = 0.00 events/second
+     1-minute rate = 0.00 events/second
+     5-minute rate = 0.00 events/second
+    15-minute rate = 0.00 events/second
+io.smartcat.berserker.generatedThroughput
+             count = 4999
+         mean rate = 99.80 events/second
+     1-minute rate = 99.06 events/second
+     5-minute rate = 98.28 events/second
+    15-minute rate = 98.10 events/second
+io.smartcat.berserker.processedThroughput
+             count = 4998
+         mean rate = 99.78 events/second
+     1-minute rate = 98.97 events/second
+     5-minute rate = 98.11 events/second
+    15-minute rate = 97.91 events/second
+
+
+12/27/17 9:27:58 AM ============================================================
+
+-- Gauges ----------------------------------------------------------------------
+io.smartcat.berserker.queueSize
+             value = 0
+
+-- Histograms ------------------------------------------------------------------
+io.smartcat.berserker.responseTime
+             count = 5998
+               min = 271031
+               max = 23950081
+              mean = 5841716.03
+            stddev = 3305493.85
+            median = 6260329.00
+              75% <= 8321689.00
+              95% <= 10347943.00
+              98% <= 10870299.00
+              99% <= 11092412.00
+            99.9% <= 13989433.00
+io.smartcat.berserker.serviceTime
+             count = 5998
+               min = 6466
+               max = 3781461
+              mean = 87369.74
+            stddev = 340925.97
+            median = 41473.00
+              75% <= 57748.00
+              95% <= 96023.00
+              98% <= 197359.00
+              99% <= 2186059.00
+            99.9% <= 3781461.00
+io.smartcat.berserker.waitTime
+             count = 5998
+               min = 236335
+               max = 21850295
+              mean = 5729075.03
+            stddev = 3272150.92
+            median = 5627053.00
+              75% <= 8241254.00
+              95% <= 10352479.00
+              98% <= 10870409.00
+              99% <= 11162014.00
+            99.9% <= 17515483.00
+
+-- Meters ----------------------------------------------------------------------
+io.smartcat.berserker.dropped
+             count = 0
+         mean rate = 0.00 events/second
+     1-minute rate = 0.00 events/second
+     5-minute rate = 0.00 events/second
+    15-minute rate = 0.00 events/second
+io.smartcat.berserker.generatedThroughput
+             count = 5998
+         mean rate = 99.83 events/second
+     1-minute rate = 99.20 events/second
+     5-minute rate = 98.34 events/second
+    15-minute rate = 98.12 events/second
+io.smartcat.berserker.processedThroughput
+             count = 5998
+         mean rate = 99.83 events/second
+     1-minute rate = 99.13 events/second
+     5-minute rate = 98.17 events/second
+    15-minute rate = 97.93 events/second
+
+
+12/27/17 9:28:08 AM ============================================================
+
+-- Gauges ----------------------------------------------------------------------
+io.smartcat.berserker.queueSize
+             value = 1
+
+-- Histograms ------------------------------------------------------------------
+io.smartcat.berserker.responseTime
+             count = 6998
+               min = 271632
+               max = 23950081
+              mean = 5786645.33
+            stddev = 3294767.96
+            median = 5755152.00
+              75% <= 8301911.00
+              95% <= 10328890.00
+              98% <= 10870299.00
+              99% <= 11127228.00
+            99.9% <= 13989433.00
+io.smartcat.berserker.serviceTime
+             count = 6998
+               min = 5577
+               max = 43924246
+              mean = 132793.45
+            stddev = 1626546.93
+            median = 37757.00
+              75% <= 53078.00
+              95% <= 86732.00
+              98% <= 146396.00
+              99% <= 1962119.00
+            99.9% <= 43924246.00
+io.smartcat.berserker.waitTime
+             count = 6998
+               min = 247645
+               max = 21850295
+              mean = 5592634.86
+            stddev = 3293201.91
+            median = 5463015.00
+              75% <= 8239079.00
+              95% <= 10341659.00
+              98% <= 10840332.00
+              99% <= 11086470.00
+            99.9% <= 18246878.00
+
+-- Meters ----------------------------------------------------------------------
+io.smartcat.berserker.dropped
+             count = 0
+         mean rate = 0.00 events/second
+     1-minute rate = 0.00 events/second
+     5-minute rate = 0.00 events/second
+    15-minute rate = 0.00 events/second
+io.smartcat.berserker.generatedThroughput
+             count = 6999
+         mean rate = 99.86 events/second
+     1-minute rate = 99.32 events/second
+     5-minute rate = 98.39 events/second
+    15-minute rate = 98.14 events/second
+io.smartcat.berserker.processedThroughput
+             count = 6998
+         mean rate = 99.84 events/second
+     1-minute rate = 99.26 events/second
+     5-minute rate = 98.23 events/second
+    15-minute rate = 97.95 events/second
+
+
+12/27/17 9:28:18 AM ============================================================
+
+-- Gauges ----------------------------------------------------------------------
+io.smartcat.berserker.queueSize
+             value = 0
+
+-- Histograms ------------------------------------------------------------------
+io.smartcat.berserker.responseTime
+             count = 7998
+               min = 270195
+               max = 13989433
+              mean = 5735864.20
+            stddev = 3251916.83
+            median = 6230619.00
+              75% <= 8293274.00
+              95% <= 10307394.00
+              98% <= 10734104.00
+              99% <= 11008998.00
+            99.9% <= 13284216.00
+io.smartcat.berserker.serviceTime
+             count = 7998
+               min = 5026
+               max = 43924246
+              mean = 128558.76
+            stddev = 1542207.11
+            median = 33337.00
+              75% <= 47037.00
+              95% <= 80299.00
+              98% <= 163290.00
+              99% <= 2200334.00
+            99.9% <= 43924246.00
+io.smartcat.berserker.waitTime
+             count = 7998
+               min = 247645
+               max = 18246878
+              mean = 5410943.65
+            stddev = 3254687.21
+            median = 5447620.00
+              75% <= 8236843.00
+              95% <= 10248490.00
+              98% <= 10800935.00
+              99% <= 11039783.00
+            99.9% <= 18246878.00
+
+-- Meters ----------------------------------------------------------------------
+io.smartcat.berserker.dropped
+             count = 0
+         mean rate = 0.00 events/second
+     1-minute rate = 0.00 events/second
+     5-minute rate = 0.00 events/second
+    15-minute rate = 0.00 events/second
+io.smartcat.berserker.generatedThroughput
+             count = 7998
+         mean rate = 99.87 events/second
+     1-minute rate = 99.43 events/second
+     5-minute rate = 98.44 events/second
+    15-minute rate = 98.16 events/second
+io.smartcat.berserker.processedThroughput
+             count = 7998
+         mean rate = 99.87 events/second
+     1-minute rate = 99.38 events/second
+     5-minute rate = 98.29 events/second
+    15-minute rate = 97.98 events/second
+
+
+12/27/17 9:28:28 AM ============================================================
+
+-- Gauges ----------------------------------------------------------------------
+io.smartcat.berserker.queueSize
+             value = 0
+
+-- Histograms ------------------------------------------------------------------
+io.smartcat.berserker.responseTime
+             count = 8999
+               min = 253778
+               max = 14264223
+              mean = 5711338.11
+            stddev = 3198530.46
+            median = 5755152.00
+              75% <= 8275299.00
+              95% <= 10282953.00
+              98% <= 10564005.00
+              99% <= 10914697.00
+            99.9% <= 14264223.00
+io.smartcat.berserker.serviceTime
+             count = 8999
+               min = 4199
+               max = 43924246
+              mean = 121129.43
+            stddev = 1457396.84
+            median = 28198.00
+              75% <= 40889.00
+              95% <= 78636.00
+              98% <= 1582068.00
+              99% <= 2225854.00
+            99.9% <= 43924246.00
+io.smartcat.berserker.waitTime
+             count = 8999
+               min = 240241
+               max = 18246878
+              mean = 5471223.62
+            stddev = 3258174.34
+            median = 5447657.00
+              75% <= 8238048.00
+              95% <= 10247593.00
+              98% <= 10797357.00
+              99% <= 10990046.00
+            99.9% <= 18246878.00
+
+-- Meters ----------------------------------------------------------------------
+io.smartcat.berserker.dropped
+             count = 0
+         mean rate = 0.00 events/second
+     1-minute rate = 0.00 events/second
+     5-minute rate = 0.00 events/second
+    15-minute rate = 0.00 events/second
+io.smartcat.berserker.generatedThroughput
+             count = 8999
+         mean rate = 99.89 events/second
+     1-minute rate = 99.51 events/second
+     5-minute rate = 98.49 events/second
+    15-minute rate = 98.18 events/second
+io.smartcat.berserker.processedThroughput
+             count = 8999
+         mean rate = 99.89 events/second
+     1-minute rate = 99.47 events/second
+     5-minute rate = 98.35 events/second
+    15-minute rate = 98.00 events/second
+
+
+12/27/17 9:28:38 AM ============================================================
+
+-- Gauges ----------------------------------------------------------------------
+io.smartcat.berserker.queueSize
+             value = 1
+
+-- Histograms ------------------------------------------------------------------
+io.smartcat.berserker.responseTime
+             count = 9998
+               min = 245874
+               max = 14871343
+              mean = 5689765.53
+            stddev = 3187364.28
+            median = 5588926.00
+              75% <= 8269086.00
+              95% <= 10278023.00
+              98% <= 10448252.00
+              99% <= 10953691.00
+            99.9% <= 14871343.00
+io.smartcat.berserker.serviceTime
+             count = 9998
+               min = 3592
+               max = 43924246
+              mean = 95276.32
+            stddev = 1361341.09
+            median = 22401.00
+              75% <= 34722.00
+              95% <= 70031.00
+              98% <= 119946.00
+              99% <= 1787069.00
+            99.9% <= 2839950.00
+io.smartcat.berserker.waitTime
+             count = 9998
+               min = 240241
+               max = 15238752
+              mean = 5576507.01
+            stddev = 3221033.63
+            median = 5455896.00
+              75% <= 8240603.00
+              95% <= 10245405.00
+              98% <= 10540670.00
+              99% <= 10836126.00
+            99.9% <= 12059811.00
+
+-- Meters ----------------------------------------------------------------------
+io.smartcat.berserker.dropped
+             count = 0
+         mean rate = 0.00 events/second
+     1-minute rate = 0.00 events/second
+     5-minute rate = 0.00 events/second
+    15-minute rate = 0.00 events/second
+io.smartcat.berserker.generatedThroughput
+             count = 9999
+         mean rate = 99.90 events/second
+     1-minute rate = 99.59 events/second
+     5-minute rate = 98.54 events/second
+    15-minute rate = 98.20 events/second
+io.smartcat.berserker.processedThroughput
+             count = 9998
+         mean rate = 99.89 events/second
+     1-minute rate = 99.56 events/second
+     5-minute rate = 98.40 events/second
+    15-minute rate = 98.02 events/second
+
+
